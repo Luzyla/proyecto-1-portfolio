@@ -106,14 +106,12 @@ nav {
     margin-right: auto;
 }
 
-/*-------------------------
-        CAJA DE TARJETAS
--------------------------*/
+/* -- CAJA DE TARJETAS -- */
 
 .contenedor-skills {
     display: flex;
     width: 80%;
-    margin-top: 60px;
+    margin-top: 40px;
     margin-left: auto;
     margin-right: auto;
     padding: 30px;
@@ -123,10 +121,9 @@ nav {
     align-content: center;
 }
 
-/*-------------------------
-    CAJA DE CADA TARJETA
--------------------------*/
-.skill {
+/* -- CAJA DE CADA TARJETA -- */
+
+.skills {
     background-color: #fafafa;
     border: 1px #dddfe5 solid;
     border-radius: 10px;
@@ -146,6 +143,19 @@ nav {
     object-position: center;
 }
 
+.texto-skills {
+    padding: 10px 200px;
+}
+
+.h2-skills {
+    margin-top: 100px;
+}
+
+.p-titulo-skills {
+    font-weight: 700;
+    font-size: 20px;
+}
+
 /*-------------------------
         TEXTOS
 -------------------------*/
@@ -153,11 +163,6 @@ nav {
 p {
     text-align: center;
     margin: 20px 0;
-}
-
-.skill p {
-    font-weight: 700;
-    font-size: 20px;
 }
 
 h1, h3 {
