@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,500&display=swap');
+
+body {
+    width: 100%;
+    color: #2e2e31;
+    font-family: 'Montserrat', 'sans serif';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #ffffff;
+    padding: 20px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 0 29px 0 rgba(134, 134, 134, 0.25);
+}
+
+.seccion-hola, .seccion-skills, .seccion-quote, .seccion-proyectos { 
+    height: 100%;
+}
+
+/*--------------------------------
+        NAV BAR GENERAL
+----------------------------------*/
+
+ul {
+    list-style-type: none;
+    align-items: flex-end;
+}
+
+nav {
+    margin-left: 60%;
+    margin-right: 20%;
+    justify-content: flex-end;
+}
+
+/*--------------------------------
+        NAV BAR HEADER
+----------------------------------*/
+
+.menu-header {
+    margin: 10px;
+    padding: 10px;
+}
+
+.button {
+    background-color: #8338ec;
+    border-radius: 25px;
+    color: #fafafa;
+    padding: 15px 40px;
+}
+
+/*--------------------------------
+        DISPLAY FLEX
+----------------------------------*/
+
+.seccion-hola, .contenedor-hola, ul, nav, .seccion-quote, .div-quote {
+    display: flex;
+}
+
+/*--------------------------------
+        SECCIÓN HOLA
+----------------------------------*/
+
+.seccion-hola {
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-hola {
+    width: 90%;
+    padding: 100px 40px 100px 40px;
+    flex-wrap: nowrap;
+}
+
+.texto-hola {
+    width: 60%;
+    padding: 30px;
+}
+
+.img-hola {
+    width: 45%;
+    
+}
+
+.p-hola {
+    text-align: left;
+    color: #8a8fa3;
+    margin: 16px 0 40px 0;
+}
+
+/*--------------------------------
+        SECCIÓN SKILLS
+----------------------------------*/
+
+.seccion-skills {
+    background-color: #f6f7fb;
+    padding: 45px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*-------------------------
+        CAJA DE TARJETAS
+-------------------------*/
+
+.contenedor-skills {
+    display: flex;
+    width: 80%;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+/*-------------------------
+    CAJA DE CADA TARJETA
+-------------------------*/
+.skill {
+    background-color: #fafafa;
+    border: 1px #dddfe5 solid;
+    border-radius: 10px;
+    width: 260px;
+    height: 229px;
+    margin: 10px;
+    padding: 30px;
+    display: inline-block;
+    color: #2e2e31;
+}
+
+.img-skills {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 60px;
+    margin-right: 60px;
+    object-position: center;
+}
+
+/*-------------------------
+        TEXTOS
+-------------------------*/
+
+p {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.skill p {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+h1, h3 {
+    text-align: left;
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 50px;
+    color: #8338ec;
+}
+
+h2, h3 {
+    font-weight: 900;
+}
+
+h2 {
+    font-size: 45px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 30px;
+    color: #424242;
+    margin: 90px 0 10px 0;
+}
+
+/*--------------------------------
+        SECCIÓN QUOTE
+----------------------------------*/
+.seccion-quote {
+    background-color: #8338ec;
+    color: #fafafa;
+    width: 100%;
+    padding: 110px 40px 130px;
+    text-align: center;
+    justify-content: center;
+}
+
+.div-quote {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-content: center;
+}
+
+blockquote {
+    /*width: 300px;*/
+}
+
+.p-quote {
+    font-style: italic;
+    font-size: 20px;
+    margin: 10px 100px;
+}
+
+.h3-quote {
+    color: #fafafa;
+    padding-bottom: 20px;
+}
+
+.img-quote {
+    width: 12%;
+    padding-bottom: 80px;
+}
+
+
+/*--------------------------------
+            FOOTER
+----------------------------------*/
+
+
+
+/*-------------------------
+        @Luzyla
+-------------------------*/
