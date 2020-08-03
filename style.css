@@ -38,21 +38,30 @@ nav {
     margin-left: 60%;
     margin-right: 20%;
     justify-content: flex-end;
+    color: #483d8b;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    font-weight: bold;
 }
 
 /*--------------------------------
         NAV BAR HEADER
 ----------------------------------*/
 
-.menu-header {
+.menu-header, .menu-proyectos, .menu-footer {
     margin: 10px;
     padding: 10px;
 }
 
 .button {
-    background-color: #8338ec;
+    background-color: #007b67;
     border-radius: 25px;
-    color: #fafafa;
+    color: #d3faf5;
     padding: 15px 40px;
 }
 
@@ -60,7 +69,7 @@ nav {
         DISPLAY FLEX
 ----------------------------------*/
 
-.seccion-hola, .contenedor-hola, ul, nav, .seccion-quote, .div-quote {
+.seccion-hola, .contenedor-hola, ul, nav, .seccion-quote, .div-quote, .contenedor-proyectos, .seccion-footer, .div-contacto {
     display: flex;
 }
 
@@ -75,23 +84,22 @@ nav {
 
 .contenedor-hola {
     width: 90%;
-    padding: 100px 40px 100px 40px;
+    padding: 90px 30px 100px 30px;
     flex-wrap: nowrap;
 }
 
 .texto-hola {
-    width: 60%;
+    width: 70%;
     padding: 30px;
 }
 
 .img-hola {
-    width: 45%;
-    
+    width: 60%;
 }
 
 .p-hola {
     text-align: left;
-    color: #8a8fa3;
+    color: #607b82;
     margin: 16px 0 40px 0;
 }
 
@@ -100,7 +108,7 @@ nav {
 ----------------------------------*/
 
 .seccion-skills {
-    background-color: #f6f7fb;
+    background-color: #d3faf526;
     padding: 45px;
     margin-left: auto;
     margin-right: auto;
@@ -171,8 +179,8 @@ h1, h3 {
 
 h1 {
     font-weight: 900;
-    font-size: 50px;
-    color: #8338ec;
+    font-size: 58px;
+    color: #009c86;
 }
 
 h2, h3 {
@@ -194,7 +202,7 @@ h3 {
         SECCIÓN QUOTE
 ----------------------------------*/
 .seccion-quote {
-    background-color: #8338ec;
+    background-color: #007b67;
     color: #fafafa;
     width: 100%;
     padding: 110px 40px 130px;
@@ -207,10 +215,6 @@ h3 {
     align-items: center;
     flex-direction: column;
     align-content: center;
-}
-
-blockquote {
-    /*width: 300px;*/
 }
 
 .p-quote {
@@ -229,12 +233,145 @@ blockquote {
     padding-bottom: 80px;
 }
 
+/*--------------------------------
+        SECCIÓN PROYECTOS
+----------------------------------*/
+
+.seccion-proyectos {
+    background-color: #d3faf526;
+    padding: 45px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* -- MENÚ -- */
+
+.nav-proyectos {
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    margin: 10px auto 10px auto;
+}
+
+.menu-proyectos {
+    font-size: 16px;
+}
+
+/* -- CAJA DE TARJETAS -- */
+
+.contenedor-proyectos {
+    display: flex;
+    width: 100%;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+/* -- CAJA DE CADA TARJETA -- */
+
+.proyectos {
+    background-color: #fafafa;
+    border: 1px #dddfe5 solid;
+    border-radius: 10px;
+    width: 330px;
+    height: 287px;
+    margin: 10px;
+    padding: 30px;
+    color: #2e2e31;
+}
+
+.img-proyectos {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 60px;
+    margin-right: 60px;
+    object-position: center;
+}
+
+.texto-proyectos {
+    padding: 10px 200px;
+}
+
+.h2-proyectos {
+    margin-top: 100px;
+}
+
+.p-titulo-proyectos {
+    font-weight: 700;
+    font-size: 16px;
+}
 
 /*--------------------------------
             FOOTER
 ----------------------------------*/
+.seccion-footer {
+    background-color: #009c86;
+    padding: 45px;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+    align-content: center;
+}
+
+/* -- MENÚ -- */
+.nav-footer {
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    margin: 10px auto 10px auto;
+    color: #00dfc0;
+}
+
+.menu-footer {
+    font-size: 14px;
+    color: #00dfc0;
+}
 
 
+
+/* -- LOGOS -- */
+
+.div-contacto {
+    justify-content: center;
+}
+
+.img-contacto {
+    font-size: 50px;
+    padding: 20px;
+}
+
+
+/* -- TEXTO -- */
+span {
+    color: #007b67;
+}
+
+.amor {
+    color: #00dfc0;
+    font-weight: bold;
+}
+
+
+
+
+/*-------------------------
+    PALETA DE COLORES
+-------------------------*/
+
+
+.cupetín-de-colores {
+    color: #009c86; /*pc*/
+    color: #007b67; /*pad*/
+    color: #607b82; /*pantalla*/
+    color: #00dfc0; /*iconos laterales*/
+    color: #d3faf5; /*data bases*/
+    color: #483d8b; /*violeta complementario*/
+}
 
 /*-------------------------
         @Luzyla

@@ -7,23 +7,27 @@
     <title>Proyecto: Portfolio Luzyla</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/konpa/devicon@master/devicon.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/konpa/devicon@master/devicon.min.css">
+
 </head>
 
 <body>
     <header>
         <nav class="nav-header">
             <ul>
-                <li class="menu-header">HOLA</li>
-                <li class="menu-header">CONOCIMIENTOS</li>
-                <li class="menu-header">PROYECTOS</li>
-                <li class="menu-header button">CONTACTO</li>
+                <a href="#a-hola"><li class="menu-header">HOLA</li></a>
+                <a href="#a-skills"><li class="menu-header">CONOCIMIENTOS</li></a>
+                <a href="#a-proyectos"><li class="menu-header">PROYECTOS</li></a>
+                <a href="mail-to:luzyla@gmail.com"><li class="menu-header button">CONTACTO</li></a>
             </ul>
         </nav>
     </header>
 
     <!-- SECCIÓN HOLA -->
 
-    <section class="seccion-hola">
+    <section class="seccion-hola" id="a-hola">
         <div class="contenedor-hola">
             <div class="texto-hola">
                 <h3>¡Hola! Soy</h3>
@@ -31,17 +35,17 @@
                 <p class="p-hola">Desarrolladora, guitarrista y fan de las matemáticas</p>
 
                 <ul>
-                    <li class="button">LO QUE HAGO</li>
+                    <a href="#proyectos"><li class="button">LO QUE HAGO</li></a>
                 </ul>
 
             </div>
-            <img class="img-hola" src="./images/software-engineer.svg" alt="">
+            <img class="img-hola" src="./images/hola-lu-left.svg" alt="">
         </div>
     </section>
 
     <!-- SECCIÓN SKILLS -->
 
-    <section class="seccion-skills">
+    <section class="seccion-skills" id="a-skills">
 
         <h2 class="h2-skills">Mis Conocimientos</h2>
         <p class="texto-skills">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate animi ea delectus harum laboriosam,
@@ -85,7 +89,7 @@
 
     <!-- SECCIÓN QUOTE -->
 
-    <section class="seccion-quote">
+    <section class="seccion-quote" id="a-quote">
 
         <div class="div-quote">
             
@@ -103,23 +107,90 @@
 
     </section>
 
-    <!-- SECCIÓN 4 -->
+    <!-- SECCIÓN PROYECTOS -->
 
-    <section class="seccion-proyectos">
+    <section class="seccion-proyectos" id="a-proyectos">
+
+        <h2 class="h2-proyectos">Mis Proyectos</h2>
+        
+        <nav class="nav-proyectos">
+            <ul class="ul-proyectos">
+                <li class="menu-proyectos button">Todos</button>
+                <li class="menu-proyectos">HTML/CSS</button>
+                <li class="menu-proyectos">JavaScript</button>
+                <li class="menu-proyectos">React</button>
+            </ul>
+        </nav>
+        
+        <div class="contenedor-proyectos">
+            
+            <div class="proyectos">
+                <img class="img-proyectos" src="./images/logos/html5.svg" alt="HTML5" />
+                <p class="p-titulo-proyectos">Portfolio</p>
+            </div>
+
+            <div class="proyectos">
+                <img class="img-proyectos" src="./images/logos/css3.svg" alt="CSS3" />
+                <p class="p-titulo-proyectos">Tienda</p>
+            </div>
+
+            <div class="proyectos">
+                <img class="img-proyectos" src="./images/logos/sass.svg" alt="Saas" />
+                <p class="p-titulo-proyectos">Juego de la Memoria</p>
+            </div>
+
+            <div class="proyectos">
+                <img class="img-proyectos" src="./images/logos/javascript.svg" alt="JavaScript" />
+                <p class="p-titulo-proyectos">Controlador de Gastos</p>
+            </div>
+
+            <div class="proyectos">
+                <img class="img-proyectos" src="./images/logos/react.svg" alt="React" />
+                <p class="p-titulo-proyectos">Admnistrador de Reuniones</p>
+            </div>
+
+            <div class="proyectos">
+                <img class="img-proyectos" src="./images/logos/git.svg" alt="GIT" />
+                <p class="p-titulo-proyectos">Todo app</p>
+            </div>
+
+            <div class="proyectos">
+                <img class="img-proyectos" src="./images/logos/git.svg" alt="GIT" />
+                <p class="p-titulo-proyectos">Buscador de Películas</p>
+            </div>
+
+        </div>
 
     </section>
 
     <!-- FOOTER -->
 
-    <footer class="footer">
+    <footer class="seccion-footer">
         <nav class="nav-footer">
             <ul>
-                <li class="menu-footer">HOLA</li>
-                <li class="menu-footer">CONOCIMIENTOS</li>
-                <li class="menu-footer">PROYECTOS</li>
-                <li class="menu-footer">CONTACTO</li>
+                <a href="#a-hola"><li class="menu-footer">HOLA</li></a>
+                <a href="#a-skills"><li class="menu-footer">CONOCIMIENTOS</li></a>
+                <a href="a-proyectos"><li class="menu-footer">PROYECTOS</li></a>
+                <a href="a-contacto"><li class="menu-footer">CONTACTO</li></a>
             </ul>
         </nav>
+
+        <div class="div-contacto" id="a-contacto">
+            <a target="_blank" href="https://github.com/Luzyla"><img class="img-contacto" src="https://cx5v8.csb.app/iconos/github-modo-claro.svg"/></a>
+            <a target="_blank" href="https://linkedin.com/in/luzyla"><img class="img-contacto" src="https://cx5v8.csb.app/iconos/linkedin.svg"/></a>
+            <a target="_blank" mailto="luzyla@gmail.com"><img class="img-contacto" src="https://cx5v8.csb.app/iconos/gmail.svg"/></a>
+            <a target="_blank" href="http://twitter.com/luzylaa"><img class="img-contacto" src="https://cx5v8.csb.app/iconos/twitter.svg"/></a>
+        </div>
+
+        <p class="amor">
+            Hecho con ❤️ y mucho 🧉 por <span>Luzyla</span>
+        </p>
+
+        <!-- 
+        <div class="footer-recursos">
+            <a href="https://icons8.com/icon/aZirgpcZkzvm/gmail">Gmail icon by Icons8</a>
+        </div>
+        -->
     </footer>
 
 </body>
