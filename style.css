@@ -205,7 +205,7 @@ h3 {
     background-color: #007b67;
     color: #fafafa;
     width: 100%;
-    padding: 110px 40px 130px;
+    padding: 100px 40px 100px;
     text-align: center;
     justify-content: center;
 }
@@ -229,7 +229,7 @@ h3 {
 }
 
 .img-quote {
-    width: 12%;
+    width: 15%;
     padding-bottom: 80px;
 }
 
