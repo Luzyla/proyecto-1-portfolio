@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,500&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    width: 100%;
+    width: 100vw;
     color: #2e2e31;
     font-family: 'Montserrat', 'sans serif';
 }
@@ -16,8 +20,7 @@ header {
     background-color: #ffffff;
     padding: 20px 0;
     width: 100%;
-    display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     box-shadow: 0 0 29px 0 rgba(134, 134, 134, 0.25);
 }
 
@@ -34,13 +37,6 @@ ul {
     align-items: flex-end;
 }
 
-nav {
-    margin-left: 60%;
-    margin-right: 20%;
-    justify-content: flex-end;
-    color: #483d8b;
-}
-
 a {
     text-decoration: none;
 }
@@ -53,6 +49,12 @@ a:hover {
         NAV BAR HEADER
 ----------------------------------*/
 
+.nav-header {
+    margin-right: 10%;
+    /*justify-content: flex-end;*/
+    color: #483d8b;
+}
+
 .menu-header, .menu-proyectos, .menu-footer {
     margin: 10px;
     padding: 10px;
@@ -62,14 +64,14 @@ a:hover {
     background-color: #007b67;
     border-radius: 25px;
     color: #d3faf5;
-    padding: 15px 40px;
+    padding: 10px 40px;
 }
 
 /*--------------------------------
         DISPLAY FLEX
 ----------------------------------*/
 
-.seccion-hola, .contenedor-hola, ul, nav, .seccion-quote, .div-quote, .contenedor-proyectos, .seccion-footer, .div-contacto {
+.seccion-hola, .contenedor-hola, ul, nav, .seccion-quote, .div-quote, .contenedor-proyectos, .seccion-footer, .div-contacto, header {
     display: flex;
 }
 
@@ -108,7 +110,7 @@ a:hover {
 ----------------------------------*/
 
 .seccion-skills {
-    background-color: #d3faf526;
+    background-color: #d3faf540;
     padding: 45px;
     margin-left: auto;
     margin-right: auto;
@@ -285,6 +287,7 @@ h3 {
     color: #2e2e31;
 }
 
+/* Male, quise modificar los margenes a la opción resumida poniendo margin: 20px 60px y directamente se rompe todo! no entiendo porqué, por eso lo dejé desglozado */
 .img-proyectos {
     margin-top: 20px;
     margin-bottom: 20px;
@@ -312,8 +315,6 @@ h3 {
 .seccion-footer {
     background-color: #009c86;
     padding: 45px;
-    margin-left: auto;
-    margin-right: auto;
     flex-direction: column;
     align-content: center;
 }
@@ -332,36 +333,47 @@ h3 {
     color: #00dfc0;
 }
 
-
-
 /* -- LOGOS -- */
-
 .div-contacto {
     justify-content: center;
 }
 
 .img-contacto {
-    font-size: 50px;
-    padding: 20px;
+    width: 80px;
+    padding: 10px;
+    margin: 10px;
 }
 
-
 /* -- TEXTO -- */
-span {
-    color: #007b67;
+.span-footer {
+    color: #fafafa;
 }
 
 .amor {
     color: #00dfc0;
-    font-weight: bold;
+    font-size: 18px;
 }
 
+/*-------------------------
+    @MEDIA TABLETS
+-------------------------*/
+@media (min-widht: 600px) and (max-widht: 900px) {
 
+}
+
+/*-------------------------
+    @MEDIA CELULARES
+-------------------------*/
+@media (max-widht: 599px) {
+
+}
 
 
 /*-------------------------
     PALETA DE COLORES
 -------------------------*/
+
+/*Male esto lo puse acá como recordatorio mientras termino de armar el código, para tener la paleta a mano*/
 
 .cupetín-de-colores {
     color: #009c86; /*pc*/
