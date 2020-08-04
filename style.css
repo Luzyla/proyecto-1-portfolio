@@ -51,7 +51,6 @@ a:hover {
 
 .nav-header {
     margin-right: 10%;
-    /*justify-content: flex-end;*/
     color: #483d8b;
 }
 
@@ -112,8 +111,6 @@ a:hover {
 .seccion-skills {
     background-color: #d3faf540;
     padding: 45px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 /* -- CAJA DE TARJETAS -- */
@@ -145,7 +142,7 @@ a:hover {
     color: #2e2e31;
 }
 
-.img-skills {
+.img-skills {  /* Male, quise modificar los margenes a la opción resumida poniendo margin: 20px 60px y directamente se rompe todo! no entiendo porqué, por eso lo dejé desglozado */
     margin-top: 20px;
     margin-bottom: 20px;
     margin-left: 60px;
@@ -248,7 +245,7 @@ h3 {
 
 /* -- MENÚ -- */
 
-.nav-proyectos {
+.div-proyectos {
     justify-content: center;
     align-items: center;
     padding: 20px 0;
@@ -257,6 +254,11 @@ h3 {
 
 .menu-proyectos {
     font-size: 16px;
+}
+
+.ul-proyectos {
+    justify-content: center;
+    align-items: center;
 }
 
 /* -- CAJA DE TARJETAS -- */
@@ -287,18 +289,14 @@ h3 {
     color: #2e2e31;
 }
 
-/* Male, quise modificar los margenes a la opción resumida poniendo margin: 20px 60px y directamente se rompe todo! no entiendo porqué, por eso lo dejé desglozado */
 .img-proyectos {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 60px;
-    margin-right: 60px;
+    margin: 5px 35px 5px 35px;
     object-position: center;
 }
 
-.texto-proyectos {
+/*.texto-proyectos {
     padding: 10px 200px;
-}
+}*/
 
 .h2-proyectos {
     margin-top: 100px;
@@ -307,6 +305,7 @@ h3 {
 .p-titulo-proyectos {
     font-weight: 700;
     font-size: 16px;
+    margin-top: 0;
 }
 
 /*--------------------------------
