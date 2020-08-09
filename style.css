@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap');
 
 html {
     scroll-behavior: smooth;
@@ -19,14 +21,11 @@ body {
 header {
     background-color: #ffffff;
     padding: 20px 0;
-    width: 100%;
+    width: 100vw;
     justify-content: flex-end;
     box-shadow: 0 0 29px 0 rgba(134, 134, 134, 0.25);
 }
 
-.seccion-hola, .seccion-skills, .seccion-quote, .seccion-proyectos { 
-    height: 100%;
-}
 
 /*--------------------------------
         NAV BAR GENERAL
@@ -66,11 +65,15 @@ a:hover {
     padding: 10px 40px;
 }
 
+#nav-burger {
+    display: none;
+}
+
 /*--------------------------------
         DISPLAY FLEX
 ----------------------------------*/
 
-.seccion-hola, .contenedor-hola, ul, nav, .seccion-quote, .div-quote, .contenedor-proyectos, .seccion-footer, .div-contacto, header {
+.seccion-hola, .contenedor-hola, ul, nav, .seccion-quote, .div-quote, .contenedor-proyectos, .seccion-footer, .div-contacto, header, .contenedor-skills, .seccion-skills {
     display: flex;
 }
 
@@ -111,25 +114,22 @@ a:hover {
 .seccion-skills {
     background-color: #d3faf540;
     padding: 45px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 /* -- CAJA DE TARJETAS -- */
 
 .contenedor-skills {
-    display: flex;
     width: 80%;
     margin-top: 40px;
-    margin-left: auto;
-    margin-right: auto;
     padding: 30px;
     justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
-    align-content: center;
 }
 
 /* -- CAJA DE CADA TARJETA -- */
-
 .skills {
     background-color: #fafafa;
     border: 1px #dddfe5 solid;
@@ -138,20 +138,17 @@ a:hover {
     height: 229px;
     margin: 10px;
     padding: 30px;
-    display: inline-block;
     color: #2e2e31;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.img-skills {  /* Male, quise modificar los margenes a la opción resumida poniendo margin: 20px 60px y directamente se rompe todo! no entiendo porqué, por eso lo dejé desglozado */
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 60px;
-    margin-right: 60px;
+.img-skills { 
+    margin: 20px 60px 20px 60px;
     object-position: center;
 }
 
 .texto-skills {
-    padding: 10px 200px;
+    padding: 10px 220px;
 }
 
 .h2-skills {
@@ -177,9 +174,11 @@ h1, h3 {
 }
 
 h1 {
+    font-family: 'Allura';
     font-weight: 900;
-    font-size: 58px;
+    font-size: 75px;
     color: #009c86;
+    text-shadow: 2px 2px 4px #424242;
 }
 
 h2, h3 {
@@ -201,9 +200,10 @@ h3 {
         SECCIÓN QUOTE
 ----------------------------------*/
 .seccion-quote {
-    background-color: #007b67;
+    background: rgb(0,223,192);
+    background: linear-gradient(180deg, rgba(0,223,192,1) 0%, rgba(27,70,61,1) 94%, rgba(0,156,134,1) 99%);
     color: #fafafa;
-    width: 100%;
+    width: 100vw;
     padding: 100px 40px 100px;
     text-align: center;
     justify-content: center;
@@ -217,19 +217,28 @@ h3 {
 }
 
 .p-quote {
+    font-family: 'IM Fell English SC';
     font-style: italic;
-    font-size: 20px;
+    font-size: 25px;
     margin: 10px 100px;
 }
 
 .h3-quote {
+    font-family: 'Allura';
+    font-size: 60px;
     color: #fafafa;
     padding-bottom: 20px;
+    font-weight: normal;
 }
 
 .img-quote {
     width: 15%;
     padding-bottom: 80px;
+}
+
+.ico-quote {
+    font-size: 80px;
+    margin-bottom: 60px;
 }
 
 /*--------------------------------
@@ -239,12 +248,9 @@ h3 {
 .seccion-proyectos {
     background-color: #d3faf526;
     padding: 45px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 /* -- MENÚ -- */
-
 .div-proyectos {
     justify-content: center;
     align-items: center;
@@ -262,22 +268,16 @@ h3 {
 }
 
 /* -- CAJA DE TARJETAS -- */
-
 .contenedor-proyectos {
     display: flex;
     width: 100%;
     margin-top: 40px;
-    margin-left: auto;
-    margin-right: auto;
     padding: 30px;
     justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
-    align-content: flex-start;
 }
 
 /* -- CAJA DE CADA TARJETA -- */
-
 .proyectos {
     background-color: #fafafa;
     border: 1px #dddfe5 solid;
@@ -287,16 +287,13 @@ h3 {
     margin: 10px;
     padding: 30px;
     color: #2e2e31;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .img-proyectos {
     margin: 5px 35px 5px 35px;
     object-position: center;
 }
-
-/*.texto-proyectos {
-    padding: 10px 200px;
-}*/
 
 .h2-proyectos {
     margin-top: 100px;
@@ -356,14 +353,194 @@ h3 {
 /*-------------------------
     @MEDIA TABLETS
 -------------------------*/
-@media (min-widht: 600px) and (max-widht: 900px) {
+@media (min-width: 600px) and (max-width: 900px) {
+
+    /*--------------------------------
+            NAV BAR HEADER
+    ----------------------------------*/
+
+    .nav-header {
+        margin-right: 5%;
+    }
+   
+    .menu-header {
+        font-size: 16px;
+    }
+   
+    /*--------------------------------
+            SECCIÓN HOLA
+    ----------------------------------*/
+
+    .seccion-hola, .contenedor-hola, .texto-hola, .texto-hola ul {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contenedor-hola {
+        flex-wrap: wrap;
+    }
+
+    .texto-hola {
+        padding: 5px;
+        width: 100vw;
+    }
+
+    .img-hola {
+        width: 70%;
+        margin-top: 20px;
+    }
+
+    /*-------------------------
+            TEXTOS
+    -------------------------*/
+
+    .p-hola, h1, h3 {
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 72px;
+    }
+
+    h3 {
+        font-size: 25px;
+    }
+
+    /*--------------------------------
+            SECCIÓN SKILLS
+    ----------------------------------*/
+
+    /* -- CAJA DE TARJETAS -- */
+    .contenedor-skills {
+        width: 100%;
+    }
+
+    .texto-skills {
+        padding: 10px 100px;
+    }
+
+    /*--------------------------------
+            SECCIÓN PROYECTOS
+    ----------------------------------*/
+
+    /* -- CAJA DE TARJETAS -- */
+
+    .contenedor-proyectos {
+        padding-left: 0;
+        padding-right: 0;
+    }
 
 }
 
 /*-------------------------
     @MEDIA CELULARES
 -------------------------*/
-@media (max-widht: 599px) {
+@media (max-width: 599px) {
+
+    /*--------------------------------
+            NAV BAR HEADER
+    ----------------------------------*/
+
+    #ul-header {
+        display: none;
+    }
+
+    #nav-burger {
+        display: block;
+        font-size: 40px;
+        color: #007b67;
+    }
+
+    /*--------------------------------
+            SECCIÓN HOLA
+    ----------------------------------*/
+
+    .seccion-hola, .contenedor-hola, .texto-hola, .texto-hola ul {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contenedor-hola {
+        flex-wrap: wrap;
+        margin-top: 0;
+        padding: 0 0 30px 0;
+    }
+
+    .texto-hola {
+        padding: 5px;
+        width: 100vh;
+    }
+
+    .img-hola {
+        width: 70%;
+        margin-top: 10px;
+    }
+
+    .p-hola, h1, h3 {
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 60px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    /*--------------------------------
+            SECCIÓN SKILLS
+    ----------------------------------*/
+
+    /* -- CAJA DE TARJETAS -- */
+    .contenedor-skills {
+        width: 100%;
+    }
+
+    .texto-skills {
+        padding: 10px 50px;
+    }
+
+    /*--------------------------------
+            SECCIÓN QUOTE
+    ----------------------------------*/
+    .p-quote {
+        margin: 10px 50px;
+    }
+
+    .h3-quote {
+        font-size: 50px;
+    }
+
+    /*--------------------------------
+            SECCIÓN PROYECTOS
+    ----------------------------------*/
+    .seccion-proyectos {
+        padding-left: 10px;
+        padding-right: 10px; 
+    }
+
+    /* -- CAJA DE TARJETAS -- */
+    .contenedor-proyectos {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+    /* -- CAJA DE CADA TARJETA -- */
+    .proyectos {
+        width: 230px;
+        height: 230px;
+        margin: 10px;
+        padding: 10px;
+    }
+
+    /*--------------------------------
+                FOOTER
+    ----------------------------------*/
+    /* -- MENÚ -- */
+    .nav-footer {
+        display: none
+    }
 
 }
 
@@ -372,17 +549,20 @@ h3 {
     PALETA DE COLORES
 -------------------------*/
 
-/*Male esto lo puse acá como recordatorio mientras termino de armar el código, para tener la paleta a mano*/
+/*Male acá armé la paleta de colores, simulando una clase, para tener todos los códigos HEX/RGB juntos*/
 
 .cupetín-de-colores {
     color: #009c86; /*pc*/
-    color: #007b67; /*pad*/
-    color: #607b82; /*pantalla*/
-    color: #00dfc0; /*iconos laterales*/
+    color: #007b67; /* rgb(0,123,103); 006754; /*pad*/
+    color: #607b82; /* rgb(96,123,130); /*pantalla*/
+    color: #00dfc0; /* rgb(0,223,192); /*iconos laterales*/
     color: #d3faf5; /*data bases*/
     color: #483d8b; /*violeta complementario*/
+    color: rgb(0,128,128);
+    color: rgb(19,81,68); /*verde oscuro*/
+    color: rgb(64,81,85); /*gris oscuro*/
+    color: #a8f0df; /*teal muy clarito*/
 }
-
 
 /*-------------------------
         @Luzyla

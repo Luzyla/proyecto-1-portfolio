@@ -5,14 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto: Portfolio Luzyla</title>
-    <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+    
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    
+    <!-- STYLE CSS -->
     <link rel="stylesheet" href="style.css">
+    
+    <!-- FONTAWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"> 
 </head>
 
 <body>
     <header>
         <nav class="nav-header">
-            <ul>
+            <ul id="ul-header">
                 <a href="#a-hola">
                     <li class="menu-header">HOLA</li>
                 </a>
@@ -26,6 +33,7 @@
                     <li class="menu-header button">CONTACTO</li>
                 </a>
             </ul>
+            <i id="nav-burger" class="fas fa-bars"></i>
         </nav>
     </header>
 
@@ -99,8 +107,9 @@
 
         <div class="div-quote">
 
-            <img class="img-quote" src="./images/lamparita-reloaded-fafafa.svg" alt="quote">
-
+            <!-- FONTAWESOME -->
+            <i class="fas fa-brain ico-quote"></i>
+            
             <blockquote>
                 <p class="p-quote">"Imagination is more important than knowledge.</p>
                 <p class="p-quote">Knowledge is limited.</p>
@@ -121,7 +130,7 @@
 
         <div class="div-proyectos">
             <ul class="ul-proyectos">
-                <li class="menu-proyectos button">Todos</li>
+                <li class="menu-proyectos button">TODOS</li>
                 <li class="menu-proyectos">HTML/CSS</li>
                 <li class="menu-proyectos">JavaScript</l>
                 <li class="menu-proyectos">React</li>
@@ -141,7 +150,7 @@
             </div>
 
             <div class="proyectos">
-                <img class="img-proyectos" src="./images/juego-memoria.svg" alt="Juego de la Memora" />
+                <img class="img-proyectos" src="./images/juego-memoria-si.svg" alt="Juego de la Memora" />
                 <p class="p-titulo-proyectos">Juego de la Memoria</p>
             </div>
 
@@ -198,8 +207,8 @@
                 <img class="img-contacto" src="./images/social-media/linkedin-00dfc0.svg" />
             </a>
             
-            <a target="_blank" mailto="luzyla@gmail.com">
-                <img class="img-contacto" src="./images/social-media/at-00dfc0.svg" />
+            <a target="_blank" href="mailto:luzyla@gmail.com">
+                <img class="img-contacto" src="./images/social-media/at2-lu-00dfc0.svg" />
             </a>
             
             <a target="_blank" href="http://twitter.com/luzylaa">
@@ -212,10 +221,11 @@
             Hecho con ❤️ y mucho 🧉 por <span class="span-footer">Luzyla</span>
         </p>
 
-        <!-- 
+        <!-- RECURSOS GRATUITOS
         <div class="footer-recursos">
             <a href="https://stories.freepik.com/web">Illustration by Stories by Freepik</a>
             <a href="https://fontawesome.com/icons">Icons by Fontawesome</a>
+            <a href="https://www.flaticon.com/authors/darius-dan" title="Darius Dan">favicon by Darius Dan</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
         </div>
         -->
     </footer>
