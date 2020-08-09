@@ -1,6 +1,6 @@
 # Portfolio ~ Luzyla
 
-## URL: (https://luzyla.github.io/proyecto-1/)
+## URL: https://luzyla.github.io/proyecto-1/
 
 ## Descripción / Description:
 ### Español
