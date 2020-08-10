@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap');
 
 html {
     scroll-behavior: smooth;
@@ -25,7 +24,6 @@ header {
     justify-content: flex-end;
     box-shadow: 0 0 29px 0 rgba(134, 134, 134, 0.25);
 }
-
 
 /*--------------------------------
         NAV BAR GENERAL
@@ -217,9 +215,8 @@ h3 {
 }
 
 .p-quote {
-    font-family: 'IM Fell English SC';
-    font-style: italic;
-    font-size: 25px;
+    font-family: 'Allura';
+    font-size: 35px;
     margin: 10px 100px;
 }
 
@@ -447,7 +444,7 @@ h3 {
 
     #nav-burger {
         display: block;
-        font-size: 40px;
+        font-size: 30px;
         color: #007b67;
     }
 
@@ -468,17 +465,21 @@ h3 {
 
     .texto-hola {
         padding: 5px;
-        width: 100vh;
+        width: 100vw;
     }
 
     .img-hola {
         width: 70%;
-        margin-top: 10px;
+        margin: 20px;
     }
-
+    
     .p-hola, h1, h3 {
         text-align: center;
     }
+
+    /*--------------------------------
+            TEXTOS
+    ----------------------------------*/   
 
     h1 {
         font-size: 60px;
@@ -488,6 +489,10 @@ h3 {
         font-size: 20px;
     }
 
+    h2 {
+        font-size: 30px;
+    }
+
     /*--------------------------------
             SECCIÓN SKILLS
     ----------------------------------*/
@@ -495,12 +500,15 @@ h3 {
     /* -- CAJA DE TARJETAS -- */
     .contenedor-skills {
         width: 100%;
+        padding: 5px;
     }
 
     .texto-skills {
-        padding: 10px 50px;
+        padding: 10px 10px;
+        margin: 10px;
+        font-size: 16px;
     }
-
+    
     /*--------------------------------
             SECCIÓN QUOTE
     ----------------------------------*/
@@ -519,11 +527,26 @@ h3 {
         padding-left: 10px;
         padding-right: 10px; 
     }
+    
+    .div-proyectos {
+        padding-top: 10px;
+        padding-bottom: 0;
+    }
+    
+    /* -- MENÚ -- */
+    .ul-proyectos {
+        flex-wrap: wrap;
+    }
+
+    .menu-proyectos {
+        font-size: 14px;
+    }
 
     /* -- CAJA DE TARJETAS -- */
     .contenedor-proyectos {
         padding-left: 0;
         padding-right: 0;
+        padding-top: 5px;
     }
     
     /* -- CAJA DE CADA TARJETA -- */
@@ -540,6 +563,14 @@ h3 {
     /* -- MENÚ -- */
     .nav-footer {
         display: none
+    }
+
+    .img-contacto {
+        width: 55px;
+    }
+
+    .amor {
+        font-size: 14px;
     }
 
 }
