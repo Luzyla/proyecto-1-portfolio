@@ -6,6 +6,7 @@ html {
 }
 
 body {
+    /* El body siempre tiene 100vw de width por defecto, por lo que no es necesaria esta orden */
     width: 100vw;
     color: #2e2e31;
     font-family: 'Montserrat', 'sans serif';
@@ -20,6 +21,7 @@ body {
 header {
     background-color: #ffffff;
     padding: 20px 0;
+    /* no es necesario el width aqui */
     width: 100vw;
     justify-content: flex-end;
     box-shadow: 0 0 29px 0 rgba(134, 134, 134, 0.25);
@@ -87,9 +89,12 @@ a:hover {
 .contenedor-hola {
     width: 90%;
     padding: 90px 30px 100px 30px;
+    /* no es necesario aclarar nowrap ya que viene por defecto */
     flex-wrap: nowrap;
 }
 
+/* Texto tiene 70% width y img 60% --> se estan repartiendo mas espacio del que esta disponible 
+Deberia ser 50-50, o 60-40. */
 .texto-hola {
     width: 70%;
     padding: 30px;
@@ -100,6 +105,7 @@ a:hover {
 }
 
 .p-hola {
+    /* no es necesario aclarar el text align left */
     text-align: left;
     color: #607b82;
     margin: 16px 0 40px 0;
@@ -112,6 +118,7 @@ a:hover {
 .seccion-skills {
     background-color: #d3faf540;
     padding: 45px;
+    /* ni justify content ni align items son necesarios aqui */
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -142,6 +149,7 @@ a:hover {
 
 .img-skills { 
     margin: 20px 60px 20px 60px;
+    /* no es necesario object position aqui */
     object-position: center;
 }
 
@@ -162,6 +170,7 @@ a:hover {
         TEXTOS
 -------------------------*/
 
+/* como esta seccion es de estilos generales, habria sido preferible que este arriba de todo */
 p {
     text-align: center;
     margin: 20px 0;
@@ -200,17 +209,22 @@ h3 {
 .seccion-quote {
     background: rgb(0,223,192);
     background: linear-gradient(180deg, rgba(0,223,192,1) 0%, rgba(27,70,61,1) 94%, rgba(0,156,134,1) 99%);
+    /* jijiji gracias por esto */
     color: #fafafa;
     width: 100vw;
     padding: 100px 40px 100px;
+    /* no es necesario text align center aqui */
     text-align: center;
     justify-content: center;
 }
 
 .div-quote {
+    /* Habria sido preferible dar un justify content con algun espaciado, y asi te evitabas tener que 
+    separar el blockquote de la imagen y la firma con margenes */
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    /* no es necesario align content ya que este elemento no tiene flex-wrap */
     align-content: center;
 }
 
@@ -249,6 +263,7 @@ h3 {
 
 /* -- MENÚ -- */
 .div-proyectos {
+    /* ni justify content ni align items son necesarios aqui */
     justify-content: center;
     align-items: center;
     padding: 20px 0;
@@ -261,12 +276,14 @@ h3 {
 
 .ul-proyectos {
     justify-content: center;
+    /* align items no es necesario aqui */
     align-items: center;
 }
 
 /* -- CAJA DE TARJETAS -- */
 .contenedor-proyectos {
     display: flex;
+    /* no es necesario el width de 100%, se pone por defecto */
     width: 100%;
     margin-top: 40px;
     padding: 30px;
@@ -288,6 +305,10 @@ h3 {
 }
 
 .img-proyectos {
+    /* tus imagenes se ven bien porque ellas tienen un tamaño adecuado, pero pensa que en general
+    trabajamos con imagenes que no sabemos por adelantado que tamaño tendran (vienen de una api
+    por ejemplo) por lo que nuestro diseño tiene que estar preparado para que sean de cualquier tamaño. 
+    Siempre dales un div contenedor y a ellas width: 100% */
     margin: 5px 35px 5px 35px;
     object-position: center;
 }
@@ -309,6 +330,7 @@ h3 {
     background-color: #009c86;
     padding: 45px;
     flex-direction: column;
+    /* no es necesario align content ya que no estamos con flex wrap */
     align-content: center;
 }
 
@@ -318,6 +340,7 @@ h3 {
     align-items: center;
     padding: 20px 0;
     margin: 10px auto 10px auto;
+    /* no es necesario el color aqui */
     color: #00dfc0;
 }
 
