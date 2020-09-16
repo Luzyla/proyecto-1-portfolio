@@ -7,7 +7,7 @@ html {
 
 body {
     /* El body siempre tiene 100vw de width por defecto, por lo que no es necesaria esta orden */
-    width: 100vw;
+    /* width: 100vw; */
     color: #2e2e31;
     font-family: 'Montserrat', 'sans serif';
 }
@@ -90,18 +90,18 @@ a:hover {
     width: 90%;
     padding: 90px 30px 100px 30px;
     /* no es necesario aclarar nowrap ya que viene por defecto */
-    flex-wrap: nowrap;
+    /* flex-wrap: nowrap; -------- */
 }
 
 /* Texto tiene 70% width y img 60% --> se estan repartiendo mas espacio del que esta disponible 
-Deberia ser 50-50, o 60-40. */
+Deberia ser 50-50, o 60-40. --------*/
 .texto-hola {
-    width: 70%;
+    width: 60%;
     padding: 30px;
 }
 
 .img-hola {
-    width: 60%;
+    width: 40%;
 }
 
 .p-hola {
@@ -119,7 +119,7 @@ Deberia ser 50-50, o 60-40. */
     background-color: #d3faf540;
     padding: 45px;
     /* ni justify content ni align items son necesarios aqui */
-    justify-content: center;
+    /* justify-content: center; ------ */
     align-items: center;
     flex-direction: column;
 }
@@ -150,7 +150,7 @@ Deberia ser 50-50, o 60-40. */
 .img-skills { 
     margin: 20px 60px 20px 60px;
     /* no es necesario object position aqui */
-    object-position: center;
+    /* object-position: center; ------------------*/
 }
 
 .texto-skills {
@@ -214,7 +214,7 @@ h3 {
     width: 100vw;
     padding: 100px 40px 100px;
     /* no es necesario text align center aqui */
-    text-align: center;
+    /* text-align: center; ----------------*/
     justify-content: center;
 }
 
@@ -225,7 +225,7 @@ h3 {
     align-items: center;
     flex-direction: column;
     /* no es necesario align content ya que este elemento no tiene flex-wrap */
-    align-content: center;
+    /* align-content: center; ------------- */
 }
 
 .p-quote {
@@ -264,8 +264,8 @@ h3 {
 /* -- MENÚ -- */
 .div-proyectos {
     /* ni justify content ni align items son necesarios aqui */
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center;
+    align-items: center; ----------*/
     padding: 20px 0;
     margin: 10px auto 10px auto;
 }
@@ -277,14 +277,14 @@ h3 {
 .ul-proyectos {
     justify-content: center;
     /* align items no es necesario aqui */
-    align-items: center;
+    /*align-items: center; --------------------*/
 }
 
 /* -- CAJA DE TARJETAS -- */
 .contenedor-proyectos {
     display: flex;
     /* no es necesario el width de 100%, se pone por defecto */
-    width: 100%;
+    /* width: 100%; */
     margin-top: 40px;
     padding: 30px;
     justify-content: center;
@@ -331,7 +331,7 @@ h3 {
     padding: 45px;
     flex-direction: column;
     /* no es necesario align content ya que no estamos con flex wrap */
-    align-content: center;
+    /* align-content: center; -----------*/
 }
 
 /* -- MENÚ -- */
@@ -341,7 +341,7 @@ h3 {
     padding: 20px 0;
     margin: 10px auto 10px auto;
     /* no es necesario el color aqui */
-    color: #00dfc0;
+    /* color: #00dfc0; */
 }
 
 .menu-footer {
