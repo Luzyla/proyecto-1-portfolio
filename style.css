@@ -63,7 +63,7 @@ a:hover {
     padding: 10px 40px;
 }
 
-#nav-burger {
+#icono-burger {
     display: none;
 }
 
@@ -347,6 +347,31 @@ h3 {
     font-size: 18px;
 }
 
+/*--------------------------------
+    MENU DESPLEGABLE MOBILE
+----------------------------------*/
+.menu-desplegable-mobile {
+    z-index: 1;
+    position: absolute;
+    right: 0;
+    top: 70px;
+}
+
+.contenedor-barra-mobile {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.barra-mobile {
+    background-color: rgba(250, 250, 250, 0.6);
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-oculto {
+    display: none;
+}
+
 /*-------------------------
     @MEDIA TABLETS
 -------------------------*/
@@ -442,7 +467,7 @@ h3 {
         display: none;
     }
 
-    #nav-burger {
+    #icono-burger {
         display: block;
         font-size: 30px;
         color: #007b67;
