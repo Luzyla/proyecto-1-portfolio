@@ -25,10 +25,45 @@ header {
     box-shadow: 0 0 29px 0 rgba(134, 134, 134, 0.25);
 }
 
+/*-------------------------
+        TEXTOS
+-------------------------*/
+
+p {
+    text-align: center;
+    margin: 20px 0;
+}
+
+h1, h3 {
+    text-align: left;
+}
+
+h1 {
+    font-family: 'Allura';
+    font-weight: 900;
+    font-size: 75px;
+    color: #009c86;
+    text-shadow: 2px 2px 4px #424242;
+}
+
+h2, h3 {
+    font-weight: 900;
+}
+
+h2 {
+    font-size: 45px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 30px;
+    color: #424242;
+    margin: 90px 0 10px 0;
+}
+
 /*--------------------------------
         NAV BAR GENERAL
 ----------------------------------*/
-
 ul {
     list-style-type: none;
     align-items: flex-end;
@@ -45,7 +80,6 @@ a:hover {
 /*--------------------------------
         NAV BAR HEADER
 ----------------------------------*/
-
 .nav-header {
     margin-right: 10%;
     color: #483d8b;
@@ -65,6 +99,29 @@ a:hover {
 
 #icono-burger {
     display: none;
+}
+
+/*--------------------------------
+    MENU DESPLEGABLE MOBILE
+----------------------------------*/
+.contenedor-barra-mobile {
+    display: flex;
+    z-index: 1;
+    position: absolute;
+    top: -250px;
+    right: 0;
+    transition: 1s;
+}
+
+.barra-mobile {
+    background-color: rgba(250, 250, 250, 0.6);
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-desplegado {
+    right: 0;
+    top: 70px;
 }
 
 /*--------------------------------
@@ -156,42 +213,6 @@ a:hover {
 .p-titulo-skills {
     font-weight: 700;
     font-size: 20px;
-}
-
-/*-------------------------
-        TEXTOS
--------------------------*/
-
-p {
-    text-align: center;
-    margin: 20px 0;
-}
-
-h1, h3 {
-    text-align: left;
-}
-
-h1 {
-    font-family: 'Allura';
-    font-weight: 900;
-    font-size: 75px;
-    color: #009c86;
-    text-shadow: 2px 2px 4px #424242;
-}
-
-h2, h3 {
-    font-weight: 900;
-}
-
-h2 {
-    font-size: 45px;
-    text-align: center;
-}
-
-h3 {
-    font-size: 30px;
-    color: #424242;
-    margin: 90px 0 10px 0;
 }
 
 /*--------------------------------
@@ -347,30 +368,6 @@ h3 {
     font-size: 18px;
 }
 
-/*--------------------------------
-    MENU DESPLEGABLE MOBILE
-----------------------------------*/
-.menu-desplegable-mobile {
-    z-index: 1;
-    position: absolute;
-    right: 0;
-    top: 70px;
-}
-
-.contenedor-barra-mobile {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.barra-mobile {
-    background-color: rgba(250, 250, 250, 0.6);
-    display: flex;
-    flex-direction: column;
-}
-
-.menu-oculto {
-    display: none;
-}
 
 /*-------------------------
     @MEDIA TABLETS
