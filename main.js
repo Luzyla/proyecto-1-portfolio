@@ -18,17 +18,20 @@ for (let link of links) {
 // FILTRO PROYECTOS
 const buttons = document.querySelectorAll(".menu-proyectos")
 const proyectos = document.querySelectorAll(".proyectos")
-
+const botonTodos = document.getElementById("boton-todos")
 // console.log(buttons)
 // console.log(proyectos)
 
+
+   
 for (let button of buttons) {
     
     button.onclick = () => {
+        botonTodos.classList.remove("buttonClicked")
         for (let proyecto of proyectos) {
             const boton = button.dataset.name
             const proyectoFiltrado = proyecto.dataset.name
-                        
+                            
             if (boton === proyectoFiltrado) {
                 proyecto.classList.remove("hidden")
             }
@@ -37,11 +40,13 @@ for (let button of buttons) {
             }
             else {
                 proyecto.classList.add("hidden")
+        
             }
         }
-    
     }
+    
+}
 
-}       
+   
 
 

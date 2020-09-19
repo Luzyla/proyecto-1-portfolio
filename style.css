@@ -93,6 +93,13 @@ a:hover {
     display: none;
 }
 
+.button {
+    background-color: #007b67;
+    border-radius: 25px;
+    color: #d3faf5;
+    padding: 10px 40px;
+}
+
 /*--------------------------------
     MENU DESPLEGABLE MOBILE
 ----------------------------------*/
@@ -259,7 +266,7 @@ a:hover {
 .botonera-proyectos {
     justify-content: center;
     padding: 20px 0;
-    margin: 45px auto 10px auto;
+    margin: 20px auto 10px auto;
 }
 
 .menu-proyectos {
@@ -276,13 +283,19 @@ a:hover {
     background-color: #007b67;
     border-radius: 25px;
     color: #d3faf5;
+    padding: 10px 40px;
 }
 
-.button {
+.buttonClicked {
     background-color: #007b67;
     border-radius: 25px;
     color: #d3faf5;
-    padding: 10px 40px;
+}
+
+.menu-proyectos:focus {
+    background-color: #007b67;
+    border-radius: 25px;
+    color: #d3faf5;
 }
 
 /* -- CAJA DE TARJETAS -- */
