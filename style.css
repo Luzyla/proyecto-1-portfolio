@@ -136,16 +136,15 @@ a:hover {
 .contenedor-hola {
     width: 90%;
     padding: 90px 30px 100px 30px;
-    flex-wrap: nowrap;
 }
 
 .texto-hola {
-    width: 70%;
+    width: 60%;
     padding: 30px;
 }
 
 .img-hola {
-    width: 60%;
+    width: 40%;
 }
 
 .p-hola {
@@ -161,7 +160,6 @@ a:hover {
 .seccion-skills {
     background-color: #d3faf540;
     padding: 45px;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
 }
@@ -191,7 +189,6 @@ a:hover {
 
 .img-skills { 
     margin: 20px 60px 20px 60px;
-    object-position: center;
 }
 
 .texto-skills {
@@ -216,7 +213,6 @@ a:hover {
     color: #fafafa;
     width: 100vw;
     padding: 100px 40px 100px;
-    text-align: center;
     justify-content: center;
 }
 
@@ -224,7 +220,6 @@ a:hover {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    align-content: center;
 }
 
 .p-quote {
@@ -264,8 +259,7 @@ a:hover {
 .botonera-proyectos {
     justify-content: center;
     padding: 20px 0;
-    margin: 10px auto 10px auto;
-   
+    margin: 45px auto 10px auto;
 }
 
 .menu-proyectos {
@@ -294,7 +288,6 @@ a:hover {
 /* -- CAJA DE TARJETAS -- */
 .contenedor-proyectos {
     display: flex;
-    width: 100%;
     margin-top: 40px;
     padding: 30px;
     justify-content: center;
@@ -336,7 +329,6 @@ a:hover {
     background-color: #009c86;
     padding: 45px;
     flex-direction: column;
-    align-content: center;
 }
 
 /* -- MENÚ -- */
@@ -345,7 +337,6 @@ a:hover {
     align-items: center;
     padding: 20px 0;
     margin: 10px auto 10px auto;
-    color: #00dfc0;
 }
 
 .menu-footer {
