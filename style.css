@@ -90,13 +90,6 @@ a:hover {
     padding: 10px;
 }
 
-.button {
-    background-color: #007b67;
-    border-radius: 25px;
-    color: #d3faf5;
-    padding: 10px 40px;
-}
-
 #icono-burger {
     display: none;
 }
@@ -128,7 +121,7 @@ a:hover {
         DISPLAY FLEX
 ----------------------------------*/
 
-.seccion-hola, .contenedor-hola, ul, nav, .seccion-quote, .div-quote, .contenedor-proyectos, .seccion-footer, .div-contacto, header, .contenedor-skills, .seccion-skills {
+.seccion-hola, .contenedor-hola, .botonera-proyectos, ul, nav, .seccion-quote, .div-quote, .contenedor-proyectos, .seccion-footer, .div-contacto, header, .contenedor-skills, .seccion-skills {
     display: flex;
 }
 
@@ -269,20 +262,34 @@ a:hover {
 }
 
 /* -- MENÚ -- */
-.div-proyectos {
+.botonera-proyectos {
     justify-content: center;
-    align-items: center;
     padding: 20px 0;
     margin: 10px auto 10px auto;
+   
 }
 
 .menu-proyectos {
     font-size: 16px;
+    background-color: #fafafa;
+    border: none;
+    padding: 15px 40px;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: 0.4s;
 }
 
-.ul-proyectos {
-    justify-content: center;
-    align-items: center;
+.menu-proyectos:hover {
+    background-color: #007b67;
+    border-radius: 25px;
+    color: #d3faf5;
+}
+
+.button {
+    background-color: #007b67;
+    border-radius: 25px;
+    color: #d3faf5;
+    padding: 10px 40px;
 }
 
 /* -- CAJA DE TARJETAS -- */
@@ -550,16 +557,13 @@ a:hover {
         padding-right: 10px; 
     }
     
-    .div-proyectos {
+    .botonera-proyectos {
         padding-top: 10px;
         padding-bottom: 0;
+        flex-wrap: wrap;
     }
     
     /* -- MENÚ -- */
-    .ul-proyectos {
-        flex-wrap: wrap;
-    }
-
     .menu-proyectos {
         font-size: 14px;
     }
@@ -595,6 +599,13 @@ a:hover {
         font-size: 14px;
     }
 
+}
+
+/*-------------------------
+    BÚSQUEDAS Y FILTROS
+-------------------------*/
+.hidden {
+    display: none;
 }
 
 
