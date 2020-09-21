@@ -42,7 +42,7 @@ h1 {
     font-weight: 900;
     font-size: 75px;
     color: #009c86;
-    text-shadow: 2px 2px 4px #424242;
+    text-shadow: 2px 2px 4px #42424280;
 }
 
 h2, h3 {
@@ -172,7 +172,6 @@ a:hover {
 }
 
 /* -- CAJA DE TARJETAS -- */
-
 .contenedor-skills {
     width: 80%;
     margin-top: 40px;
@@ -216,9 +215,8 @@ a:hover {
 ----------------------------------*/
 .seccion-quote {
     background: rgb(0,223,192);
-    background: linear-gradient(180deg, rgba(0,223,192,1) 0%, rgba(27,70,61,1) 94%, rgba(0,156,134,1) 99%);
+    background: linear-gradient(180deg, rgba(0,223,192,1) 0%, rgba(27,70,61,1) 94%, rgba(33,60,56,1) 100%);
     color: #fafafa;
-    width: 100vw;
     padding: 100px 40px 100px;
     justify-content: center;
 }
@@ -256,7 +254,6 @@ a:hover {
 /*--------------------------------
         SECCIÓN PROYECTOS
 ----------------------------------*/
-
 .seccion-proyectos {
     background-color: #d3faf526;
     padding: 45px;
@@ -271,7 +268,7 @@ a:hover {
 
 .menu-proyectos {
     font-size: 16px;
-    background-color: #fafafa;
+    background-color: #d3faf526;
     border: none;
     padding: 15px 40px;
     text-decoration: none;
@@ -284,6 +281,7 @@ a:hover {
     border-radius: 25px;
     color: #d3faf5;
     padding: 10px 40px;
+    cursor: pointer;
 }
 
 .buttonClicked {
@@ -366,6 +364,11 @@ a:hover {
     width: 80px;
     padding: 10px;
     margin: 10px;
+    transition: 0.3s;
+}
+
+.img-contacto:hover {
+    /*decidir efecto*/
 }
 
 /* -- TEXTO -- */
