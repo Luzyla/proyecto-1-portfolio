@@ -195,7 +195,8 @@ a:hover {
 }
 
 .img-skills { 
-    margin: 20px 60px 20px 60px;
+    margin: 20px 70px 20px 50px;
+    width: 50%;
 }
 
 .logos-skills {
