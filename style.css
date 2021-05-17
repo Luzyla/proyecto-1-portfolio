@@ -191,10 +191,16 @@ a:hover {
     padding: 30px;
     color: #2e2e31;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
 }
 
 .img-skills { 
     margin: 20px 60px 20px 60px;
+}
+
+.logos-skills {
+    max-height: 65%;
+    justify-content: center;
 }
 
 .texto-skills {
@@ -219,6 +225,7 @@ a:hover {
     color: #fafafa;
     padding: 100px 40px 100px;
     justify-content: center;
+    height: 100%;
 }
 
 .div-quote {
@@ -355,6 +362,11 @@ a:hover {
     color: #00dfc0;
 }
 
+.emoji-size {
+    font-size: 25px;
+}
+
+
 /* -- LOGOS -- */
 .div-contacto {
     justify-content: center;
@@ -373,6 +385,11 @@ a:hover {
 
 /* -- TEXTO -- */
 .span-footer {
+    color: #fafafa;
+    cursor: pointer;
+}
+
+.span-footer a {
     color: #fafafa;
 }
 
